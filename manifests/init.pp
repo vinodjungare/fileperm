@@ -44,5 +44,20 @@
 #
 class fileperm {
 
+# Creating a local file
+file { 'c:/skill.txt' :
+  ensure  => 'file',
+  mode    => '0660',
+  owner   => 'localuser',
+  group   => 'skillbuilder',
+}
+
+# Creating a local folder
+file { 'c:/skillbuilder' :
+  ensure  => 'directory',
+  mode    => '0660',
+  owner   => 'localuser',
+  group   => 'skillbuilder',
+}
 
 }
