@@ -60,7 +60,7 @@ file { 'c:/skillbuilder' :
   group   => 'skillbuilder',
 }
 
-acl { 'c:/localfile.txt':
+acl { 'c:/skill.txt':
   permissions => [
    { identity => 'localuser', rights => ['full'] },
    { identity => 'skillbuilder', rights => ['read'] }
